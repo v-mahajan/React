@@ -3,7 +3,8 @@ By - Vansh Mahajan\
 References: https://github.com/KalobTaulien/react-201 (as part of Udemy Full Stack web dev course)
 
 # Video Demonstration:
-[Screen Recording 2024-01-12 at 11.27.38 PM.zip](https://github.com/v-mahajan/React/files/13926487/Screen.Recording.2024-01-12.at.11.27.38.PM.zip)
+
+[MovieBrowser_ScreenRec.zip](https://github.com/v-mahajan/React/files/13926494/MovieBrowser_ScreenRec.zip)
 
 
 
