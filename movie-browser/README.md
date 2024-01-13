@@ -1,5 +1,5 @@
 # Project: Movie Browser 
-By - Vansh Mahajan
+By - Vansh Mahajan\
 References: https://github.com/KalobTaulien/react-201 (as part of Udemy Full Stack web dev course)
 
 # Getting Started with Create React App
