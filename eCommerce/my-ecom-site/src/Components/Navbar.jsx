@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../images/logo.jpeg';
 import cartIcon from '../images/cart.webp';
+import './Navbar.css'
 
 export const Navbar = () => {
   return (
@@ -17,7 +18,7 @@ export const Navbar = () => {
             </ul>
         </div>
         <div className="navbar-login">
-          <btn>Login</btn>
+          <button>Login</button>
         </div>
         <div className="navbar-cart">
           <img src={cartIcon} alt="cart icon failed to load"/>

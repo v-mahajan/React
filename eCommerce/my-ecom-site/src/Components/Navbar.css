@@ -1,3 +1,31 @@
 .navbar{
     display: flex;
+    width: 100%;
+    height: 200px;
+    border: 2px;
+    border-color: grey;
+}
+.navbar-logo{
+    width: 20%;
+}
+.navbar-list{
+    width: 60%;
+}
+.navbar-login{
+    width: 10%;
+}
+.navbar-cart{
+    width: 10%;
+}
+.navbar-logo img{
+    height: 100px;
+    width: 160px;
+}
+.navbar-list ul{
+    display: flex;
+    align-items: center;
+}
+.navbar-cart img{
+    width: 100px;
+    height: 100px;
 }
