@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../images/logo.jpeg';
+import cartIcon from '../images/cart.webp';
 
 export const Navbar = () => {
   return (
@@ -15,8 +16,12 @@ export const Navbar = () => {
                 <li>Outdoor Living</li>
             </ul>
         </div>
-        <div className="navbar-login"></div>
-        <div className="navbar-cart"></div>
+        <div className="navbar-login">
+          <btn>Login</btn>
+        </div>
+        <div className="navbar-cart">
+          <img src={cartIcon} alt="cart icon failed to load"/>
+        </div>
       </div>
 
     </div>
