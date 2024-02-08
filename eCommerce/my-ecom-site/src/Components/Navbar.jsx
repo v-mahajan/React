@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../images/logo.jpeg';
+import logo from '../images/logo.webp';
 import cartIcon from '../images/cart.webp';
 import './Navbar.css'
 
@@ -9,22 +9,21 @@ export const Navbar = () => {
       <div className="navbar">
         <div className="navbar-logo">
           <img src={logo} alt='image failed'/>
+          <p>Home Decor</p>
         </div>
-        <div className="navbar-list">
-            <ul>
-                <li>Home</li>
+        <div >
+            <ul className="navbar-list">
+                <li>Home <hr /></li>
                 <li>Office</li>
                 <li>Outdoor Living</li>
             </ul>
         </div>
-        <div className="navbar-login">
+        <div className="navbar-login-cart">
           <button>Login</button>
-        </div>
-        <div className="navbar-cart">
           <img src={cartIcon} alt="cart icon failed to load"/>
+          <div className='navbar-cart-count'>0</div>
         </div>
       </div>
-
     </div>
   )
 }
