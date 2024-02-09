@@ -3,9 +3,10 @@ import logo from '../images/logo.webp';
 import cartIcon from '../images/cart.webp';
 import './Navbar.css'
 import {useState} from 'react'
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
-  const [menu, setMenu] = useState("Home");
+  const [menu, setMenu] = useState("Shop");
   return (
     <div>
       <div className="navbar">
@@ -15,14 +16,15 @@ export const Navbar = () => {
         </div>
         <div >
             <ul className="navbar-list">
-                <li onClick={()=> {setMenu("Home")}}>Home{menu==="Home"?<hr/>:<></>}</li>
-                <li onClick={()=> {setMenu("Office")}}>Office{menu==="Office"?<hr/>:<></>}</li>
-                <li onClick={()=> {setMenu("Outdoor Living")}}>Outdoor Living{menu==="Outdoor Living"?<hr/>:<></>}</li>
+                <li onClick={() => {setMenu("Shop")}}><Link to='/' style={{textDecoration: 'none'}}>Shop</Link>{menu==="Shop"?<hr/>:<></>}</li>
+                <li onClick={()=> {setMenu("Home")}}><Link to='/home' style={{textDecoration: 'none'}}>Home</Link>{menu==="Home"?<hr/>:<></>}</li>
+                <li onClick={()=> {setMenu("Office")}}><Link to='/office' style={{textDecoration: 'none'}}>Office</Link>{menu==="Office"?<hr/>:<></>}</li>
+                <li onClick={()=> {setMenu("Outdoor Living")}}><Link to='/outdoorliving' style={{textDecoration: 'none'}}>Outdoor Living</Link>{menu==="Outdoor Living"?<hr/>:<></>}</li>
             </ul>
         </div>
         <div className="navbar-login-cart">
-          <button>Login</button>
-          <img src={cartIcon} alt="cart icon failed to load"/>
+          <Link to='/login'><button>Login</button></Link>
+          <Link to='/cart'><img src={cartIcon} alt="cart icon failed to load"/></Link>
           <div className='navbar-cart-count'>0</div>
         </div>
       </div>
