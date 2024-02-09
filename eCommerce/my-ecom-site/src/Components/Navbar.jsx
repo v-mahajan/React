@@ -2,8 +2,10 @@ import React from 'react'
 import logo from '../images/logo.webp';
 import cartIcon from '../images/cart.webp';
 import './Navbar.css'
+import {useState} from 'react'
 
 export const Navbar = () => {
+  const [menu, setMenu] = useState("Home");
   return (
     <div>
       <div className="navbar">
@@ -13,9 +15,9 @@ export const Navbar = () => {
         </div>
         <div >
             <ul className="navbar-list">
-                <li>Home <hr /></li>
-                <li>Office</li>
-                <li>Outdoor Living</li>
+                <li onClick={()=> {setMenu("Home")}}>Home{menu==="Home"?<hr/>:<></>}</li>
+                <li onClick={()=> {setMenu("Office")}}>Office{menu==="Office"?<hr/>:<></>}</li>
+                <li onClick={()=> {setMenu("Outdoor Living")}}>Outdoor Living{menu==="Outdoor Living"?<hr/>:<></>}</li>
             </ul>
         </div>
         <div className="navbar-login-cart">
