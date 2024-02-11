@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../images/logo.webp';
+import logo from '../images/logoBest.png';
 import cartIcon from '../images/cart.webp';
 import './Navbar.css'
 import {useState} from 'react'
@@ -14,7 +14,7 @@ export const Navbar = () => {
           <img src={logo} alt='image failed'/>
           <p>Home Decor</p>
         </div>
-        <div >
+        <div className='navbar-list-div'>
             <ul className="navbar-list">
                 <li onClick={() => {setMenu("Shop")}}><Link to='/' style={{textDecoration: 'none'}}>Shop</Link>{menu==="Shop"?<hr/>:<></>}</li>
                 <li onClick={()=> {setMenu("Home")}}><Link to='/home' style={{textDecoration: 'none'}}>Home</Link>{menu==="Home"?<hr/>:<></>}</li>
