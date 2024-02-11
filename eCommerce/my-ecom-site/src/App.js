@@ -7,6 +7,9 @@ import Product from './pages/Product';
 import Cart from './pages/Cart';
 import LoginSignUp from './pages/LoginSignup';
 import Footer from './Components/Footer/Footer.jsx'
+import home_banner from './images/homeBanner.webp'
+import office_banner from './images/OfficeBanner.webp'
+import outdoorLiving_banner from './images/OutdoorLiving.webp'
 
 function App() {
   return (
@@ -15,9 +18,9 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path='/' element={<Shop/>}/>
-          <Route path='/home' element={<ShopCategory category="home"/>}/>
-          <Route path='/office' element={<ShopCategory category="office"/>}/>
-          <Route path='outdoorliving' element={<ShopCategory category="outdoor living"/>}/>
+          <Route path='/home' element={<ShopCategory banner={home_banner} category="home"/>}/>
+          <Route path='/office' element={<ShopCategory banner={office_banner} category="office"/>}/>
+          <Route path='outdoorliving' element={<ShopCategory banner={outdoorLiving_banner} category="outdoor living"/>}/>
           <Route path='/product' element={<Product/>}>
             <Route path=':productId' element={<Product/>}/>
           </Route>
