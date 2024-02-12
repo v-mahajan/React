@@ -19,10 +19,11 @@
 .shopcategory-indexSort p span{
     font-weight: 800;
 }
-.shoptcategory-products{
+.shopcategory-products{
+    width: 900px;
     margin: 20px 170px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 20px;
 }
 .shopcategory-loadmore{
