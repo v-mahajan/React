@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './ProductDisplay.css'
 import star_icon from '../../images/StarIconGlowing.png'
 import star_dull_icon from '../../images/StarIconDull.png'
