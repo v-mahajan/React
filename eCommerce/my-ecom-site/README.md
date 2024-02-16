@@ -5,4 +5,5 @@
 
 # Video Demonstrations:
 Home Page:
-[Download the Home Page video demo](./src/VideoDemo_outputs/HomePage.mov)/Users/vanshmahajan/Desktop/React/React/eCommerce/my-ecom-site/src/VideoDemo_outputs/HomePage.zip
+![HomePage](https://github.com/v-mahajan/React/assets/122697365/1a4ae626-03df-4442-bfa9-a7b06b964598)
+
