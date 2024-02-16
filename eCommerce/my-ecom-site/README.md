@@ -5,3 +5,5 @@
 
 # Video Demonstrations:
 Home Page:
+/Users/vanshmahajan/Desktop/React/React/eCommerce/my-ecom-site/src/VideoDemo_outputs/HomePage.zip
+/Users/vanshmahajan/Desktop/React/React/eCommerce/my-ecom-site/src/VideoDemo_outputs/HomePage.mov
